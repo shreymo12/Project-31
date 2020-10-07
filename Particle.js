@@ -14,9 +14,10 @@ class Particle {
     display(){
       var pos =this.body.position;
       push (); 
+      translate(pos.x, pos.y);
       ellipseMode(RADIUS);
       fill(this.color);
-      ellipse(pos.x, pos.y, 10,10);
+      ellipse(0, 0, 10,10);
       pop () ; 
     }
   };
